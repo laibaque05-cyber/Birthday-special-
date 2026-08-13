@@ -1,10 +1,20 @@
 let currentPage = 1;
 
 
-/* NEXT PAGE */
+/* NEXT PAGE + MUSIC */
 
 function nextPage() {
 
+    // 🎵 Start music when user clicks Next
+    const music = document.getElementById("birthdayMusic");
+
+    if (music) {
+        music.play().catch(() => {
+            console.log("Music waiting for user interaction");
+        });
+    }
+
+    // Current page hide
     const current =
         document.getElementById("page" + currentPage);
 
@@ -12,6 +22,7 @@ function nextPage() {
         current.classList.remove("active");
     }
 
+    // Next page
     currentPage++;
 
     const next =
@@ -75,7 +86,7 @@ function reveal(card) {
 }
 
 
-/* MUSIC */
+/* MUSIC BUTTON */
 
 function playMusic() {
 
