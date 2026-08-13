@@ -20,7 +20,6 @@
 
     <main>
 
-
         <!-- PAGE 1 -->
         <section class="page active" id="page1">
 
@@ -51,7 +50,6 @@
             </button>
 
         </section>
-
 
 
         <!-- PAGE 2 -->
@@ -92,7 +90,6 @@
         </section>
 
 
-
         <!-- PAGE 3 -->
         <section class="page" id="page3">
 
@@ -103,7 +100,6 @@
             <p>
                 Har card ko touch karke ek message dekhiye. ❤️
             </p>
-
 
             <div class="cards">
 
@@ -145,13 +141,11 @@
 
             </div>
 
-
             <button onclick="nextPage()">
                 Next 💕
             </button>
 
         </section>
-
 
 
         <!-- PAGE 4 -->
@@ -197,13 +191,11 @@
 
             </div>
 
-
             <button onclick="nextPage()">
                 Some Beautiful Memories 📸
             </button>
 
         </section>
-
 
 
         <!-- PAGE 5 -->
@@ -217,7 +209,6 @@
                 Kuch pictures jo mere liye special hain. ✨
             </p>
 
-
             <div class="gallery">
 
                 <img
@@ -230,13 +221,11 @@
 
             </div>
 
-
             <button onclick="nextPage()">
                 One More Thing ❤️
             </button>
 
         </section>
-
 
 
         <!-- PAGE 6 -->
@@ -275,7 +264,6 @@
             </button>
 
         </section>
-
 
 
         <!-- PAGE 7 FINAL -->
@@ -321,9 +309,7 @@
 
         </section>
 
-
     </main>
-
 
 
     <!-- MUSIC -->
@@ -331,11 +317,13 @@
     <audio id="birthdayMusic" loop>
 
         <source
-            src="media/birthday.mp3"
+            src="birthday.mp3"
             type="audio/mpeg">
 
     </audio>
 
+
+    <!-- MUSIC BUTTON -->
 
     <button
         onclick="playMusic()"
@@ -346,41 +334,9 @@
     </button>
 
 
+    <!-- JAVASCRIPT -->
 
     <script src="script.js"></script>
-
-
-    <script>
-
-        function playMusic() {
-
-            const music =
-                document.getElementById("birthdayMusic");
-
-            const button =
-                document.querySelector(".music-btn");
-
-
-            if (music.paused) {
-
-                music.play();
-
-                button.innerHTML =
-                    "⏸️ Pause Music";
-
-            } else {
-
-                music.pause();
-
-                button.innerHTML =
-                    "🎵 Play Music";
-
-            }
-
-        }
-
-    </script>
-
 
 </body>
 
